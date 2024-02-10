@@ -1,0 +1,588 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: #2c3e50;
+}
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 50px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+label.logo span{
+    color: #1b9bff;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+nav i{
+    color: white;
+    font-size: 17px;
+    border-radius: 3px;
+}
+.toolb a .fas:hover,.toolb i.fas{
+    background: #1b9bff;
+}
+
+a:hover,a.active{
+    background: #1b9bff;
+}
+.checkbtn img{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    margin-left: -30px;
+    margin-top: -9px;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+
+.note {
+    color: #fff;
+    margin-top: 150px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.note h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.note h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+}
+
+.note p {
+    font-size: 25px;
+}
+
+.note span {
+    color: red;
+}
+.icons i{
+    color: #fff;
+    font-size: 40px;
+}
+.fab:hover{
+    background: none;
+    color: #0082e6;   
+}
+.icons a:hover{
+    background: none;
+}
+.pic{
+    display: none;
+}
+
+.me img {
+    position: relative;
+    margin-left: 650px;
+    margin-top: -370px;
+    cursor: pointer;
+    width: 40%;
+    height: 500px;
+    border-radius: 1000px;
+}
+
+.me img:hover {
+    transform: scale(1.04);
+}
+
+.bod {
+    margin-top: 150px;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    background: #2c3e50;
+}
+
+.wrapper {
+    display: inline-flex;
+}
+
+.wrapper .static-txt {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    font-weight: 700;
+}
+
+.wrapper .dynamic-txts {
+    margin-top: -15px;
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    color: #1b9bff;
+    list-style: none;
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background: #2c3e50;
+    border-left: 2px solid #0082e6;
+    animation: typing 1.5s steps(16) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+.me2{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+.abt{
+    display: none;
+}
+.btn{
+    background-color: #0082e6;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 15px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #1b9bff;
+    transform: scale(1.05);
+    font-weight: bolder;
+}
+.btn3{
+    background-color: #0082e6;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 20px;
+    margin-top: 15px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.btn3:hover{
+    background-color: #1b9bff;
+    transform: scale(1.05);
+    font-weight: bolder;
+}
+.extra.btn{
+    background-color: #0082e6;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 15px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.con{
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.box{
+    background: transparent;
+    width: 90%;
+    height: 500px;
+    margin-left: 60px;
+    border: 1px solid #0082e6;
+    border-radius: 20px;
+    color: #fff;
+}
+.box i{
+    font-size: 30px;
+}
+.extra{
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+.extra i{
+    font-size: 20px;
+}
+
+.input-box{
+    margin-top: -350px;
+}
+.input-box input {
+    color: #fff;
+    width: 60%;
+    height: 00%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 430px;
+}
+.input-box2 input {
+    color: #fff;
+    width: 60%;
+    height: 350px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 430px;
+}
+.btn2{
+    display: none;
+}
+
+/*services css*/
+.service h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    cursor: pointer;
+    color: #0082e6;
+}
+
+.service h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    cursor: pointer;
+    color: #0082e6;
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin-left: 0px;
+    margin-right: 3px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+}
+
+.skill img {
+    width: 100px;
+}
+
+
+.skill-counter:hover {
+    animation: bipbop 2s ease-in-out infinite;
+}
+
+@keyframes bipbop {
+    0% {
+        opacity: 100%;
+        width: 90px;
+    }
+
+    50% {
+        opacity: 50%;
+        width: 100px;
+    }
+
+    100% {
+        opacity: 100%;
+        width: 90px;
+    }
+}
+
+.work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    margin-left: 0px;
+    margin-right: 3px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.work img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 .1rem 1rem grey;
+}
+
+.work1 img:hover {
+    transform: scale(1.04);
+}
+
+.work2 img:hover {
+    transform: scale(1.04);
+}
+
+.work3 img:hover {
+    transform: scale(1.04);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quary */
+@media (max-width: 952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn img{
+        display: block;
+    }
+    ul{
+       position: fixed; 
+       width: 100%;
+       height: 100vh;
+       background: #2c3e50;
+       top: 80px;
+       left: -100%;
+       text-align: center;
+       transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 30px;
+    }
+    .toolb a .fas:hover,.toolb .fas{
+        background: none;
+        color: #0082e6;   
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .note{
+        margin-left: 20px;
+        text-align: center;
+    }
+    .note p{
+        font-size: 15px;
+    }
+    .me img{
+        display: none;
+    }
+    .note h2{
+        font-size: 20px;
+        margin-bottom: -10px;
+    }
+    .note h1{
+        font-size: 50px;
+        margin-bottom: -10px;
+    }
+    .pic{
+        display: block;
+    }
+
+    .head{
+        display: none;
+    }
+
+    .con{
+        margin-top: 10px;
+    }
+    .box{
+        margin-left: 20px;
+    }
+    .extra{
+       display: none;
+    }
+    .input-box{
+        margin-top: 10px;
+        margin-left: -400px;
+    }
+    .input-box input {
+        color: #fff;
+        width: 45%;
+        height: 00%;
+    }
+    .input-box2{
+        margin-top: 10px;
+        margin-left: -400px;
+    }
+    .input-box2 input {
+        color: #fff;
+        width: 45%;
+        height: 300px;
+    }
+    .btn2{
+        display: block;
+        background-color: #0082e6;
+        padding: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+        border-radius: 20px;
+        margin-top: 15px;
+        margin-left: 100px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    .btn2:hover{
+        background-color: #1b9bff;
+        transform: scale(1.05);
+        font-weight: bolder;
+    }
+    .me2{
+        margin-top: 100px;
+    }
+    .abt{
+        display: block;
+    }
+    .abt h1{
+        color: #0082e6;
+        font-size: 60px;
+    }
+
+        /*services css*/
+        .service h1 {
+            margin-left: 50px;
+            margin-top: 80px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+        }
+
+    
+        .skill {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 30px 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 30px;
+            margin-left: 0px;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .skill h1{
+            display: none;
+        } 
+        .skill p{
+            display: none;
+        } 
+        
+        .skill img{
+            width: 100%;
+        }
+        .skill0:hover{
+            transform: none;
+        }
+        .skill1:hover{
+            transform: none;
+        }
+        .skill2:hover{
+            transform: none;
+        }
+
+        .work {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding: 30px 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 30px;
+            margin-left: 0px;
+            margin-right: 3px;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+}
